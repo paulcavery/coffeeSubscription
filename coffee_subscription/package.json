@@ -1,0 +1,22 @@
+{
+  "name": "coffee_subscription",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "next": "10.2.0",
+    "next-sass": "^1.0.3",
+    "node-sass": "^6.0.0",
+    "popper": "^0.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-strap": "0.0.1",
+    "reactstrap": "^8.9.0",
+    "styled-components": "^5.3.0"
+  }
+}
