@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { FrauncesFont, BarlowFont } from "../utilities";
+import { FrauncesFont, BarlowFont, MainColors } from "../utilities";
 
-const Card = ({ className, key, title, content }) => {
+const Card = ({ className }) => {
 	return (
-		<div key={key} className={className}>
-			<h1>{title}</h1>
-			<p>{content}</p>
+		<div className={className}>
+			<h1>Filter</h1>
+			<p>dfjhkdjfhrjlhieurgiuwherg</p>
 		</div>
 	);
 };
@@ -17,7 +17,7 @@ const StyledCard = styled(Card)`
 	width: 223px;
 	border-radius: 6px;
 	color: #fff;
-	background-color: ${(props) => props.cardColor};
+	background-color: ${MainColors.lightCream};
 	h1 {
 		font: 24px ${FrauncesFont};
 	}
