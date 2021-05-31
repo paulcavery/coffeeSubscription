@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { FrauncesFont, BarlowFont, MainColors } from "../utilities";
 
-const Card = ({ className }) => {
+const Card = ({ title, content }) => {
 	return (
-		<div className={className}>
-			<h1>Filter</h1>
-			<p></p>
-		</div>
+		<StyledCard>
+			<h1>{title}</h1>
+			<p>{content}</p>
+		</StyledCard>
 	);
 };
 
-const StyledCard = styled(Card)`
+const StyledCard = styled.div`
 	display: block;
 	text-align: left;
 	height: 250px;
@@ -25,5 +25,4 @@ const StyledCard = styled(Card)`
 		font: 16px ${BarlowFont};
 	}
 `;
-
-export default StyledCard;
+export default Card;

@@ -1,7 +1,7 @@
-import StyledCard from "../src/elements/card";
+import Card from "../src/elements/card";
 import StyledFooter from "./Components/footer";
 import Header from "./Components/header";
-import StyledAboutHero from "./Components/aboutComponents/hero";
+import Hero from "./Components/hero";
 import AppWrapper from "../src/elements/AppWrapper";
 
 export default function About() {
@@ -9,8 +9,17 @@ export default function About() {
 		<>
 			<AppWrapper>
 				<Header />
-				<StyledAboutHero />
-				<StyledCard />
+				<Hero
+					title="About Us"
+					content="Coffeeroasters began its journey of exotic discovery in 1999,
+								highlighting stories of coffee from around the world. We have since been
+								dedicated to bring the perfect cup - from bean to brew - in every
+								shipment."
+					background="../../../assets/about/desktop/image-hero-whitecup.jpg"
+					backgroundMobile="../../../assets/about/mobile/image-hero-whitecup.jpg"
+					backgroundTablet="../../../assets/about/tablet/image-hero-whitecup.jpg"
+				/>
+				<Card />
 				<StyledFooter />
 			</AppWrapper>
 		</>
