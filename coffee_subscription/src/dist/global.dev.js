@@ -8,7 +8,7 @@ exports.GlobalStyle = void 0;
 var _styledComponents = require("styled-components");
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    body {\n        padding: 0;\n        margin: 0;\n        box-sizing: border-box;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    body {\n        padding: 0;\n        margin: 0;\n        box-sizing: border-box;\n        position: relative;\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

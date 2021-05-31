@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
-import { MainColors, below } from "../../src/utilities";
+import { MainColors, below, BarlowFont } from "../../src/utilities";
 
 const Footer = ({ className }) => {
 	return (
@@ -72,18 +72,16 @@ const Footer = ({ className }) => {
 };
 
 export default styled(Footer)`
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 5%;
 	background: ${MainColors.darkGreyBlue};
 	color: #fff;
-	padding: 10px 5%;
+	padding: 45px 5%;
 	width: 90%;
 	height: 120px;
 	line-height: 100px;
-	& :hover {
-		color: ${MainColors.grey};
-	}
+	font: 700 12px ${BarlowFont};
 
 	.NavList {
 		vertical-align: middle;
@@ -94,6 +92,11 @@ export default styled(Footer)`
 	.NavListItem {
 		display: inline;
 		margin-right: 2rem;
+	}
+	a {
+		& :hover {
+			color: ${MainColors.grey};
+		}
 	}
 	.SocialList {
 		margin-left: 35%;

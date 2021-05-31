@@ -5,7 +5,7 @@ const Card = ({ className }) => {
 	return (
 		<div className={className}>
 			<h1>Filter</h1>
-			<p>dfjhkdjfhrjlhieurgiuwherg</p>
+			<p></p>
 		</div>
 	);
 };
