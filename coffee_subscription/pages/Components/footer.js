@@ -129,7 +129,7 @@ export default styled(Footer)`
 		height: 346px;
 		.NavListItem {
 			display: block;
-			margin: 0;
+			margin: ;
 		}
 		.SocialList {
 			display: block;

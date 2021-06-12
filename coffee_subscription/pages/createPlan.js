@@ -3,7 +3,35 @@ import StyledFooter from "./Components/footer";
 import AppWrapper from "../src/elements/AppWrapper";
 import Hero from "./Components/hero";
 
+import { useState } from "react";
+import { Modal } from "./Components/createPlanComponents/modal";
+import { ButtonOne } from "../src/elements/Button";
+import { GridWrapper } from "./Components/createPlanComponents/cardGrid";
+import Card from "../src/elements/card";
+import { CardGridHeader } from "./Components/createPlanComponents/CardGridHeader";
+import { Plan } from "./data/plan";
+const PlanGrid = () => {
+	const [isCardGridOpen, setIsCardGridOpen] = useState(0);
+
+	return Plan.map((p) => (
+		<>
+			<CardGridHeader
+				isOpen={isCardGridOpen}
+				title={p.title}
+				open={p.id}
+				setOpen={setIsCardGridOpen}
+			/>
+			<GridWrapper isOpen={isCardGridOpen} open={p.id}>
+				<Card CardTitle={p.cardTitle1} content={p.cardContent1} />
+				<Card CardTitle={p.cardTitle2} content={p.cardContent2} />
+				<Card CardTitle={p.cardTitle3} content={p.cardContent3} />
+			</GridWrapper>
+		</>
+	));
+};
 export default function CreatePlan() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
 	return (
 		<>
 			<AppWrapper>
@@ -18,6 +46,12 @@ export default function CreatePlan() {
 					fontTablet="48px"
 					fontMobile="40px"
 				/>
+
+				<PlanGrid />
+				<Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+				<ButtonOne onClick={() => setIsModalOpen(!isModalOpen)}>
+					Create my plan!
+				</ButtonOne>
 				<StyledFooter />
 			</AppWrapper>
 		</>

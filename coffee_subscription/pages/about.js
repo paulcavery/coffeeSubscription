@@ -1,8 +1,10 @@
-import Card from "../src/elements/card";
 import StyledFooter from "./Components/footer";
 import Header from "./Components/header";
 import Hero from "./Components/hero";
 import AppWrapper from "../src/elements/AppWrapper";
+import CommitCard from "./Components/aboutComponents/CommitCard";
+import QualityCard from "./Components/aboutComponents/QualityCard";
+import LocationCard from "./Components/aboutComponents/LocationCard";
 
 export default function About() {
 	return (
@@ -19,7 +21,9 @@ export default function About() {
 					backgroundMobile="../../../assets/about/mobile/image-hero-whitecup.jpg"
 					backgroundTablet="../../../assets/about/tablet/image-hero-whitecup.jpg"
 				/>
-				<Card />
+				<CommitCard />
+				<QualityCard />
+				<LocationCard />
 				<StyledFooter />
 			</AppWrapper>
 		</>

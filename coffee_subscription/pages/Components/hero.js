@@ -28,12 +28,12 @@ export default function Hero({
 }
 
 const StyledHero = styled.div`
-	width: 90%;
+	width: 88%;
 	height: 450px;
 	background: url(${(props) => props.background}) no-repeat center;
 	background-size: cover;
 	color: #fff;
-	margin-left: 5%;
+	margin-left: 6%;
 	border-radius: 6px;
 
 	h1 {
